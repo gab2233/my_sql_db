@@ -1,0 +1,21 @@
+
+"Drummondville","590549","EOP","2017/01/02",00001,"Virement-remboursement /a MC 02","",73.34,"","","","","",-73.32
+"Drummondville","590549","EOP","2017/01/02",00002,"Depot provenant de marge de credit","","",73.32,"","","","",0.00
+"Drummondville","590549","EOP","2017/01/05",00003,"TPS /CANADA","","",69.50,"","","","",69.50
+"Drummondville","590549","EOP","2017/01/05",00004,"Credit d'impot pour solidarite /GOUV. QUEBEC","","",153.88,"","","","",223.38
+"Drummondville","590549","EOP","2017/01/09",00005,"Electricite /HYDRO-QUEBEC","",146.07,"","","","","",77.31
+"Drummondville","590549","EOP","2017/01/16",00006,"Achat /REST LA BANQUISE INC","",36.93,"","","","","",40.38
+"Drummondville","590549","EOP","2017/01/18",00007,"Achat /ALIMENTS KIM PHAT JARR","",91.61,"","","","","",-51.23
+"Drummondville","590549","EOP","2017/01/18",00008,"Depot provenant de marge de credit","","",51.23,"","","","",0.00
+"Drummondville","590549","EOP","2017/01/19",00009,"Paiement facture - AccesD Internet /VISA OR Elegance Desjardins","",565.59,"","","","","",-565.59
+"Drummondville","590549","EOP","2017/01/19",00010,"Virement recu de /LILIE MICHAUD      /loyer jf","","",1000.00,"","","","",434.41
+"Drummondville","590549","EOP","2017/01/20",00011,"Achat /GESTION R.A.C. INC","",21.00,"","","","","",413.41
+"Drummondville","590549","EOP","2017/01/26",00012,"Virement recu de /LILIE MICHAUD      /laveuse","","",603.03,"","","","",1016.44
+"Drummondville","590549","EOP","2017/01/30",00013,"Virement recu de /LILIE MICHAUD      /loyerjf","","",650.00,"","","","",1666.44
+"Drummondville","590549","EOP","2017/01/30",00014,"Virement envoye a /gestion albert     /2640-8","",650.00,"","","","","",1016.44
+"Drummondville","590549","EOP","2017/01/30",00015,"Paiement /DESJARDINS FIN. SECUR.   PASMC","",8.70,"","","","","",1007.74
+"Drummondville","590549","EOP","2017/01/30",00016,"Achat /REST LA BANQUISE INC","",39.16,"","","","","",968.58
+"Drummondville","590549","EOP","2017/01/31",00017,"Interet sur EOP","","",0.01,"","","","",968.59
+"Drummondville","590549","MC2","2017/01/02",00001,"Remboursement automatique /de EOP:73,34$","","","",73.34,"","","",26520.01
+"Drummondville","590549","MC2","2017/01/02",00002,"Avance au compte EOP","","","","","",73.32,"",26593.33
+"Drummondville","590549","MC2","2017/01/18",00003,"Avance au compte EOP","","","","","",51.23,"",26644.56
