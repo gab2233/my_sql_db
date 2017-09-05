@@ -43,7 +43,7 @@ public class MySQLAccess {
         
     }
     
-    public List readDataBase(String query, Map<Integer,String> column) throws Exception {
+    public Object readDataBase(String query, Map<Integer,String> column) throws Exception {
         try {
             
             Class.forName("com.mysql.jdbc.Driver");
@@ -59,23 +59,26 @@ public class MySQLAccess {
             
             resultSet = statement
                     .executeQuery(query);
-            List line = new ArrayList<>();
-            List table = new ArrayList<>();
+            Object[] line = new Object[column.size()];
+            Object[] table = new Object[500];
             //writeMetaData(resultSet);
+            int j = 0;
             while (resultSet.next()) {
+                int i = 0;
                 for (Map.Entry<Integer, String> entry : column.entrySet())
                 {
                     if(entry.getValue().toUpperCase()=="INT")
-                        line.add(resultSet.getInt(entry.getKey()));
+                        line[i] = resultSet.getInt(entry.getKey());
                     else if(entry.getValue()=="STRING")
-                        line.add(resultSet.getString(entry.getKey()));
+                        line[i] = resultSet.getString(entry.getKey());
                     else if(entry.getValue()=="DOUBLE")
-                    line.add(resultSet.getDouble(entry.getKey()));
+                        line[i] = resultSet.getDouble(entry.getKey());
                     else
                         System.out.print("type non repertotie"+entry.getValue());
-                    
+                    i++;
                 }
-                table.add(line);
+                table[j] = line;
+                j++;
             }
             return table;
             //writeResultSet(resultSet);

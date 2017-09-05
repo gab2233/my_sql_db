@@ -48,16 +48,31 @@ public class converter extends AbstractModel{
         
     }
     public void get_arbre_compte(){
-        
+        Object[] data = new Object[500];
+        int count = 0;
+        int i = 0;
+        String parent = "x";
+        ArrayList<Integer> unallocated = new ArrayList<Integer>();
         MySQLAccess access_db = new MySQLAccess(); 
-        Map<Integer,String> dic = new HashMap<Integer,String>();
-        dic.put(1, "string");
-        dic.put(2, "string");
-        dic.put(7, "string");
+        Map<Integer,String> dic_column = new HashMap<Integer,String>();
+        dic_column.put(1, "string");
+        dic_column.put(2, "string");
+        dic_column.put(7, "string");
+        Map<Integer,String> dic_column_count = new HashMap<Integer,String>();
+        dic_column_count.put(1,"integer");
+        
+        
         try{
-           access_db.readDataBase("SELECT * FROM Accounts", dic); 
+        count = (int)access_db.readDataBase("SELECT Count(*) FROM Accounts", dic_column_count)[0];
+        data = access_db.readDataBase("SELECT * FROM Accounts", dic_column); 
+        
+        while(!parent.isEmpty()){
+            parent = ((String[])data[i])[2]; // houseId is at first place in your query
+            i++;   
         }
-        catch(Exception e){
+        
+        
+        }catch(Exception e){
             e.printStackTrace();
         }
         
